@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-int charSize = sizeof(char);
-int intSize = sizeof(int);
-int lonSize = sizeof(long int);
-int longlongSize = sizeof(long long int);
-int floatSize = sizeof(float);
+char p;
+int q;
+long int r;
+long long int t;
+float v;
 
-printf("Size of a char: &d byte(S)\n", charSize);
-printf("Size of an int: &d byte(S)\n", intSize);
-printf("Size of a long int: &d byte(S)\n", longSize);
-printf("Size of a long long int: &d byte(S)\n",longlongSize);
-printf("Size of a float: &d byte(S)\n", floatSize);
+printf("Size of a char: &lu byte(S)\n", (unsigned long)sizeof(p));
+printf("Size of an int: &lu byte(S)\n", (unsigned long)sizeof(q));
+printf("Size of a long int: &lu byte(S)\n", (unsigned long)sizeof(r));
+printf("Size of a long long int: &lu byte(S)\n", (unsigned long)sizeof(t));
+printf("Size of a float: &lu byte(S)\n", (unsigned long)sizeof(v));
 return (0);
 }
